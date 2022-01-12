@@ -4,7 +4,7 @@ using namespace std;
 int main() {
 	setlocale(LC_ALL, "ru");
 	cout << "Задача 1. \nДан массив размера N и целые числа K и L (1 <= K <= L <= N).\nНайти среднее арифметическое элементов массива с номерами от K до L включительно. " << endl;
-	int N = 0, j = 1, K, L, q=0, answ;
+	double N = 0, j = 1, K, L, q=0, answ;
 	int* arr = new int[N];
 	cout << "Введите N: "; cin >> N;
 	if (N >= 1) {
