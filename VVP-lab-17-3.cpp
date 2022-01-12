@@ -4,7 +4,7 @@ using namespace std;
 int main() {
 	setlocale(LC_ALL, "ru");
 	cout << "Задача 3. \nДан массив A размера N. \nНайти минимальный элемент из его элементов с четными номерами: A2, A4, A6..." << endl;
-	int N, t = 0, rem;
+	int N, t = 1000000000, ii rem;
 	cout << "Введите значение N: "; cin >> N;
 	int* arr = new int[N];
 	cout << "Введите значения для каждого элемента массива:" << endl;
@@ -19,9 +19,10 @@ int main() {
 			if (arr[i] < t) {
 				rem = arr[i];
 				t = arr[i];
+				ii = i;
 			}
 		}
 
 	}
-	cout << "Минимальный элементс с четным номером:" << rem <<  endl;
+	cout << "Минимальный элементс с четным номером: arr["<<ii<<"] = " << rem <<  endl;
 }
